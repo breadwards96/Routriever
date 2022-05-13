@@ -3,6 +3,7 @@ DRTrack API Interface
 Routriever is used to pull down and parse routes from DRTrack to a CSV file that then can be used with SmartConnect to push the data into Microsoft Dynamics NAV.
 
 **Config Template**
+
 For security purposes all app parameters have been encapsulated in an external file. This section outlines each parameter to help you produce your own config file 
 _Parameters_
 1. Web Service Links: This is the WSDL link provided by DRTrack to access their webservice for your business
@@ -19,10 +20,12 @@ _Parameters_
 Once you've replaced the placeholders in the template with your parameters, simply delete the 'template' from the file name and save it.
 
 **Crypto.py**
+
 All passwords must be encrypted using Crypto.py and a key file with the encryption key must be manually created and placed in the project folder.
 This protects passwords used in your web service and emails from the public by encrypting them using the cryptography library.
 
 _Using Crypto.py_
+
 Open crypto in the IDE of your choice and uncomment the bottom segment of code. this will allow you to run crypto in the terminal and generate an encrytion key
 You should save your encryption key in its own key.txt file
 If you have multiple passwords to encrypt, crypto will allow you to enter the original encryption key for each new password so that only one key will have to be created.
