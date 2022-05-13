@@ -65,8 +65,6 @@ def get_auth_token(client):
 
     auth.authenticationTokenField = token
 
-    print("Authentication Token: " + token + "\n")
-
     return auth
 
 
